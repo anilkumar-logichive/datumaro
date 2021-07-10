@@ -850,7 +850,7 @@ class ItemTransform(Transform):
         unexpected problems. Use wrap_item() or item.wrap() to simplify copying.
         """
 
-        raise NotImplementedError()
+        return item.wrap(self)
 
     def __iter__(self):
         for item in self._extractor:
